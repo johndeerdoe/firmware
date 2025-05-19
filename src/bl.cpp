@@ -975,7 +975,7 @@ https_request_err_e handleApiDisplayResponse(ApiDisplayResponse &apiResponse)
           }
           else
           {
-            Log.info("%s [%d]: Old image. No needed to show it.\r\n", __FILE__, __LINE__);
+            Log.info("%s [%d]: Old image. No need to show it.\r\n", __FILE__, __LINE__);
             status = false;
             result = HTTPS_SUCCESS;
           }
@@ -2024,12 +2024,12 @@ static bool checkCurrentFileName(String &newName)
 
   if (currentFilename.equals(newName))
   {
-    Log.info("%s [%d]: Current filename equals to the new filename\r\n", __FILE__, __LINE__);
+    Log.info("%s [%d]: Current filename is equal to the new filename\r\n", __FILE__, __LINE__);
     return true;
   }
   else
   {
-    Log.error("%s [%d]: Current filename doesn't equal to the new filename\r\n", __FILE__, __LINE__);
+    Log.error("%s [%d]: Current filename isn't equal to the new filename\r\n", __FILE__, __LINE__);
     return false;
   }
 }
